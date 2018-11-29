@@ -1,2 +1,4 @@
-variable "gcp_zone" {}
-gcp_zone = "${var.gcp_zone}"
+variable "gcp_zone" {
+  default = "test"
+}
+
