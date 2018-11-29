@@ -1,17 +1,13 @@
-resource "google_compute_instance" "vm_instance" {
-  name         = "terraform-instance"
-  machine_type = "f1-micro"
-
-  boot_disk {
-    initialize_params {
-      image = "debian-cloud/debian-9"
-    }
-  }
-
-  network_interface {
-    # A default network is created for all GCP projects
-    network       = "default"
-    access_config = {
-    }
-  }
-}
+variable "gcp_project_id" {}
+variable "project_id" {}
+variable "gcp_credentials" {}
+variable "config_name" {}
+variable "gcp_zone" {}
+variable "zone" {}
+variable "instance_id" {}
+variable "uptime_check_id" {}
+variable "cluster_name" {}
+variable "image_type" {}
+variable "machine_type" {}
+variable "node_version" {}
+variable "min_master_version" {}
