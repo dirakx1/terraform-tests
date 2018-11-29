@@ -1,2 +1,2 @@
 variable "gcp_zone" {}
-region = "${var.gcp_zone}"
+gcp_zone = "${var.gcp_zone}"
