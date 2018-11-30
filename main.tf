@@ -1,3 +1,5 @@
+variable "gcp_credentials" {}
+
 resource "null_resource" "uptimeupdate" {
 
   provisioner "local-exec" {
@@ -9,4 +11,3 @@ resource "null_resource" "uptimeupdate" {
     }
   }
 }
-
