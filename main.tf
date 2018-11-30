@@ -1,9 +1,3 @@
-provider "google" {
-  credentials = "${var.gcp_credentials}"
-  project     = "nc-te-teststackdrive001-plygrd"
-  region      = "us-central1"
-}
-
 resource "null_resource" "uptimeupdate" {
 
   provisioner "local-exec" {
