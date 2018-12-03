@@ -1,6 +1,6 @@
 variable "gcp_credentials" {}
 
-resource "null_resource" "testingpolicies" {
+resource "null_resource" "testingpolicies1" {
 
   provisioner "local-exec" {
     command = "echo"
